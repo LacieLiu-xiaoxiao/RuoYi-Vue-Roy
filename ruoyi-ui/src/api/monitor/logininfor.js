@@ -28,8 +28,9 @@ export function cleanLogininfor() {
 // 导出登录日志
 export function exportLogininfor(query) {
   return request({
-    url: '/monitor/logininfor/export',
+    url: '/royli/loginfor/exportExcel',
     method: 'get',
+    responseType: 'blob',
     params: query
   })
 }
